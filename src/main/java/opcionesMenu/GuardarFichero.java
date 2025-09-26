@@ -21,7 +21,7 @@ public class GuardarFichero {
         escribir.close();
     }
     public void exportarFichero(PartidoFifa partido,String nombreFichero) throws IOException {
-        FileWriter fw = new FileWriter(nombreFichero+".csv");
+        FileWriter fw = new FileWriter(nombreFichero+".csv",true);
         BufferedWriter escribir = new BufferedWriter(fw);
         escribir.append(partido.toCSV());
         escribir.newLine();

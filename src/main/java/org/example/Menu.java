@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-    public void menu() throws IOException {
+    public void menu() throws Exception {
         Scanner leer = new Scanner(System.in);
         int opcion;
         boolean salir = false;
@@ -26,12 +26,12 @@ public class Menu {
             opcion=leer.nextInt();
             if (opcion==0){
                 salir=true;
+            }else{
+                procesamientoOpcionMenu(opcion);
             }
-            procesamientoOpcionMenu(opcion);
-
         }
     }
-    public void procesamientoOpcionMenu(int opcion) throws IOException {
+    public void procesamientoOpcionMenu(int opcion) throws Exception {
         ArrayList<PartidoFifa> partidos = new ExtraerCSV().csvAObjeto(new File("fifa.csv"));
         switch (opcion){
             case 1-> new Favoritos().filtrado(partidos);

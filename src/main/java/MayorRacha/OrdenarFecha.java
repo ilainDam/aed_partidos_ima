@@ -27,9 +27,6 @@ public class OrdenarFecha {
             }
         }
         ArrayList<PartidoFifa> partidosOrdenados = new ArrayList<>(Arrays.asList(partidoArray));
-        for (PartidoFifa partido : partidosOrdenados) {
-            System.out.println(partido.toCSV());
-        }
         new ComprobarRacha().racha(partidosOrdenados,pais);
         return partidosOrdenados;
     }

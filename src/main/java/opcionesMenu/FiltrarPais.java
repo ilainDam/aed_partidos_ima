@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class FiltrarPais {
 
-    public void filtrado(ArrayList<PartidoFifa> partidos) throws IOException {
+    public void filtrado(ArrayList<PartidoFifa> partidos) throws Exception {
         Scanner leer = new Scanner(System.in);
         ArrayList<PartidoFifa> partidosFiltrados = new ArrayList<>();
         String pais;

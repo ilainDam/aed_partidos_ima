@@ -2,12 +2,12 @@ package opcionesMenu;
 
 import org.example.PartidoFifa;
 
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FiltrarAño {
-    public void filtrado(ArrayList<PartidoFifa> partidos) throws IOException {
+    public void filtrado(ArrayList<PartidoFifa> partidos) throws Exception {
         Scanner leer = new Scanner(System.in);
         ArrayList<PartidoFifa> partidosFiltrados = new ArrayList<>();
         int año;
